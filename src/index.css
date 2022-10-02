@@ -1,13 +1,110 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: monospace !important;
+  font-size: 14px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h3 {
+  margin: 0.6em 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.components {
+  display: flex;
+  gap: 3em;
+}
+
+/* PROGGRESS BAR */
+.t-progress {
+  width: 250px;
+  height: 1.5em;
+  position: relative;
+}
+
+.t-progress .t-progress-bg,
+.t-progress .t-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: white;
+  width: 100%;
+}
+
+.t-progress .t-progress-bar {
+  z-index: 1;
+}
+
+/* BUTTON */
+
+.t-button .t-button-line-horizontal {
+  padding: 0 4px;
+}
+
+.t-button .t-button-line-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: -0.5rem 0;
+}
+
+.t-button .t-button-line-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.t-button .t-button-line-vertical * {
+  margin: -1px 0 -1px 0;
+}
+
+.t-button .t-button-text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* .t-button {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.2em 1em;
+  cursor: pointer;
+  margin: 0.4em;
+}
+
+.t-button:hover {
+  background-color: #0000000a;
+}
+
+.t-button.t-button-double {
+  border: none;
+  outline: double;
+} */
+
+/* .t-button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.t-button div{
+  background-color: white;
+} */
+
+/* RADIO BUTTON */
+.t-radio-group {
+  border: none;
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.25rem;
 }
